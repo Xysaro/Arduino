@@ -1,10 +1,10 @@
-Arduino HID Project 2.4.4
+Arduino HID Project 2.5.0
 =========================
 
 ![Header Picture](header.jpg)
 
 This project went through a lot of phases and has now reached a new Arduino ~~USB-Core~~ Library
-with a lot of new functions like extended HID. It also supports HoodLoader1+2.
+with a lot of new functions like extended HID. It also supports HoodLoader2 (version 1 is no longer supported).
 The idea is to enable enhanced USB functions to almost all 'standard' Arduino boards.
 
 **Supported Arduinos (IDE 1.6.7 or higher!):**
@@ -47,6 +47,10 @@ www.nicohood.de
 Version History
 ===============
 ```
+2.5.0 Release (15.09.2018)
+* Ported to SAMD architecture #146
+* Fixed bad keyboard report issue #148
+
 2.4.4 Release (27.01.2017)
 * Added releaseAll() to Mouse API
 * Fix flexible array errors

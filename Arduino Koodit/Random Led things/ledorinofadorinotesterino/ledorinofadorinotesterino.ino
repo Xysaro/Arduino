@@ -1,8 +1,8 @@
 #include <Adafruit_NeoPixel.h>
 
 
-int PIN = 6;
-int totalLEDs = 4;
+int PIN = 9;
+int totalLEDs = 8;
 int ledFadeTime = 50;
 
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(totalLEDs, PIN, NEO_GRB + NEO_KHZ800);

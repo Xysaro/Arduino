@@ -1,17 +1,12 @@
 #include <FastLED.h>
 
 #define NUM_LEDS 8
-#define DATA_PIN 9
+#define DATA_PIN 10
 extern const TProgmemRGBPalette16 CloudColors_p FL_PROGMEM;
 extern const TProgmemRGBPalette16 LavaColors_p FL_PROGMEM;
 int state;
 
 CRGB valot[NUM_LEDS];
-
-
-int red[8]={};
-int green[8]={};
-int blue[8]={};
 
 
 void setup() {
@@ -26,16 +21,25 @@ void loop() {
 static uint8_t Pmillis=0;
 uint8_t Cmillis=millis();
 int indexadd = 255/NUM_LEDS;
-uint8_t colorIndex = 10;
-uint8_t brightness=1;
 
-state = lavalamp ();
+
+lavalamp ();
         
     
 
 }
 
-int lavalamp (){
+void lavaroll() {
+	int indexadd = 255 / NUM_LEDS;
+	uint8_t colorIndex = 10;
+	uint8_t brightness = 1;
+	
+	for (int dot = 0; dot < NUM_LEDS; dot++) {
+		valot[dot] = ColorFromPalette(LavaColors_p, colorIndex, brightness, NOBLEND);
+	}
+}
+
+void lavalamp (){
 
 int indexadd = 255/NUM_LEDS;
 uint8_t colorIndex = 10;

@@ -1,5 +1,6 @@
 # Arduino
 
-Arduino koodit is just various projects that i have made or example codes.
+Arduino koodit are just various projects that i have made or example codes.
+Most of them are unfinished.
 
-Tests contains various hardware testing codes
+Tests contains various programs for hardware testing and debugging
